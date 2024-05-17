@@ -68,7 +68,7 @@ def main(df, keyword_column, link_column, rank_column):
             df.at[index, rank_column] = -1
 
         # Add a delay of 2 seconds between requests to avoid triggering rate limits
-        time.sleep(2)
+        time.sleep(15)
 
     # Write the updated DataFrame back to the file
     file_extension = file_path.split('.')[-1]
